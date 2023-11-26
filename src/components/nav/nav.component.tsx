@@ -1,12 +1,12 @@
+import './nav.styles.scss';
 
-
-export function Nav () {
+export function Nav() {
   return (
-    <nav>
-      <ul>
-        <li><a href="#section-about">About</a></li>
-        <li><a href="#section-skills">Skills</a></li>
-        <li><a href="#section-projects">Projects</a></li>
+    <nav className='navbar'>
+      <ul className='navbar__nav-list'>
+        <li className='navbar__nav-item'><a className='navbar__nav-link' href="#section-about"><span>About</span></a></li>
+        <li className='navbar__nav-item'><a className='navbar__nav-link' href="#section-skills"><span>Skills</span></a></li>
+        <li className='navbar__nav-item'><a className='navbar__nav-link' href="#section-projects"><span>Projects</span></a></li>
       </ul>
     </nav>
   )

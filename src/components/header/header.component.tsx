@@ -1,11 +1,13 @@
-import {Nav} from '../nav/nav.component';
+import { Nav } from '../nav/nav.component';
+import './header.styles.scss';
 
 export function Header() {
   return (
-    <header>
+    <header className='header util-mb-4'>
       <Nav />
-      <h1>Juan Torres</h1>
-      <h2>Full Stack Developer</h2>
+
+      <h1 className='heading-primary heading-primary--main'>Juan Torres</h1>
+      <h2 className='heading-primary heading-primary--sub'>Full Stack Developer</h2>
 
       <div>
         <a>
