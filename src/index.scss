@@ -70,6 +70,8 @@ $margin-values: (
   6: 24px,
   7: 28px,
   8: 32px,
+  9: 36px,
+  10: 40px
 ); // Adjust as needed
 
 @each $key, $val in $margin-values {
@@ -86,6 +88,9 @@ $margin-values: (
     margin-right: ($val);
   }
 }
+
+
+// ----------HEADINGS----------
 
 .heading-primary {
   color: var(--color-grey-light-1);
@@ -194,6 +199,66 @@ $margin-values: (
     font-size: 1.2rem;
   }
 }
+
+// ----------HEADINGS END----------
+
+
+
+// ----------SOCIAL MEDIA----------
+
+.social-media {
+  display: flex;
+  animation: moveUp 1.5s ease-in;
+
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    transition: all 0.4s;
+
+    @media only screen and (max-width: 768px) {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    @media only screen and (max-width: 475px) {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    &--default {
+      fill: var(--color-grey-light-1);
+    }
+
+    &--linkedin {
+      fill: var(--social-media-linkedin-blue);
+    }
+
+    &--github {
+      &--btn {
+        height: 1.8rem;
+        width: 1.8rem;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+}
+
+// ----------SOCIAL MEDIA END----------
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
