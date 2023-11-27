@@ -3,7 +3,7 @@ import './header.styles.scss';
 
 export function Header() {
   return (
-    <header className="header util-mb-4">
+    <header className="header">
       <Nav />
 
       <h1 className="heading-primary heading-primary--main">Juan Torres</h1>
