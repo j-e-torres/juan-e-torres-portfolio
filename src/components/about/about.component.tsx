@@ -14,9 +14,9 @@ export function About() {
         </video>
       </div>
 
-      <div className="u-text-center util-mb-10">
+      <div className="util-mb-10">
         <h2 className="heading-secondary">
-          <span className="heading-secondary--main"> About </span>
+          <span className="heading-secondary--main">About</span>
         </h2>
       </div>
 
@@ -33,7 +33,7 @@ export function About() {
         </figure> --> */}
 
           <div className="about__description">
-            <div className="about__education u-margin-bottom-small">
+            <div className="about__education util-mb-4">
               <div>
                 <h4 className="heading-quaternary">
                   Fullstack Academy
