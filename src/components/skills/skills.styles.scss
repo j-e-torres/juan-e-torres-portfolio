@@ -1,0 +1,36 @@
+.section-skills {
+  // height: 100vh;
+  // width: 100%;
+  padding: 3rem 0;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(89, 89, 89, 0.8),
+      rgba(64, 64, 64, 0.8)
+    ),
+    url(./assets/img/bridgeLightMobile.jpg);
+
+  @media only screen and (min-width: 901px) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(89, 89, 89, 0.8),
+        rgba(64, 64, 64, 0.8)
+      ),
+      url(./assets/img/bridgeLight-1x.jpg);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 901px),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 901px),
+    only screen and (min-width: 1800px) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(89, 89, 89, 0.8),
+        rgba(64, 64, 64, 0.8)
+      ),
+      url(./assets/img/bridgeLight-2x.jpg);
+  }
+
+  background-size: cover;
+  background-position: center;
+}
+

@@ -1,0 +1,149 @@
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: var(--shadow-medium);
+    margin-bottom: var(--margin-bottom-medium);
+    flex: 0 0 25%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all 0.4s;
+
+    @media only screen and (max-width: 900px) {
+      width: 55%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 65%;
+    }
+
+    @media only screen and (max-width: 475px) {
+      width: 75%;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    // &:not(:last-child) {
+    //   // margin-right: 15rem;
+    // }
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 21rem;
+    width: 100%;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(./assets/img/frontend-1x.jpg);
+
+      @media only screen and (min-resolution: 192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-width: 1920px) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./assets/img/frontend-2x.jpg);
+      }
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(./assets/img/backend-1x.jpg);
+
+      @media only screen and (min-resolution: 192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-width: 1920px) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./assets/img/backend-2x.jpg);
+      }
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(./assets/img/othertech-1x.jpg);
+
+      @media only screen and (min-resolution: 192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-width: 1920px) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(./assets/img/othertech-2x.jpg);
+      }
+    }
+  }
+
+  &__card-heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    // color: var(--color-grey-dark-2);
+    color: var(--color-grey-light-1);
+
+    position: absolute;
+    // text-align: center;
+    top: 14rem;
+    // right: 5rem;
+    left: 1rem;
+    z-index: 5;
+    width: 100%;
+
+    @media only screen and (max-width: 475px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__card-heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      );
+    }
+  }
+
+  &__card-details {
+    padding: 1rem;
+  }
+}
