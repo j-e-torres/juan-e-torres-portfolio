@@ -14,9 +14,12 @@ export function Header() {
 
       <div className="social-media">
         <a rel="noopener" target="_blank" href="https://github.com/j-e-torres" className="social-media__link">
-          <svg className="social-media__icon social-media__icon--default">
+          {/* <svg className="social-media__icon social-media__icon--default">
             <use xlinkHref={githubIcon}></use>
-          </svg>
+          </svg> */}
+          <span className="social-media__icon social-media__icon--default">
+            {githubIcon}
+          </span>
         </a>
 
         <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/juan-torres-w2w2" className="social-media__link">
