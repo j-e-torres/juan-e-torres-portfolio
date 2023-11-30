@@ -4,6 +4,9 @@ import './header.styles.scss';
 import githubIcon from '../../assets/img/SVG/github.svg';
 import linkedInIcon from '../../assets/img/SVG/linkedin.svg';
 
+// import test from '../../assets/img/sprite.svg'
+
+
 export function Header() {
   return (
     <header className="header">
@@ -17,9 +20,8 @@ export function Header() {
           {/* <svg className="social-media__icon social-media__icon--default">
             <use xlinkHref={githubIcon}></use>
           </svg> */}
-          <span className="social-media__icon social-media__icon--default">
-            {githubIcon}
-          </span>
+          <img src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--default">
+          </img>
         </a>
 
         <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/juan-torres-w2w2" className="social-media__link">
