@@ -25,7 +25,7 @@ export function Footer() {
               {/* <svg className="social-media__icon social-media__icon--github--btn">
                 <use xlinkHref="../../assets/img/sprite.svg#icon-github"></use>
               </svg> */}
-              <img src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--default">
+              <img src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--github--btn">
               </img>
             </span>
             GitHub
