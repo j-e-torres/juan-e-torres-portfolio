@@ -19,15 +19,15 @@ export function Projects() {
             <picture className="project__figure project__figure--screenshot">
               <source
                 srcSet="
-                    ./assets/img/betterBuildWins-small.png  1x,
-                    ./assets/img/betterBuildWins-medium.png 2x
+                    ../../assets/img/betterBuildWins-small.png  1x,
+                    ../../assets/img/betterBuildWins-medium.png 2x
                   "
                 media="(max-width: 2500px)"
               />
               <img
                 srcSet="
-                    ./assets/img/betterBuildWins-large.png 1x,
-                    ./assets/img/betterBuildWins-large.png 2x
+                    ../../assets/img/betterBuildWins-large.png 1x,
+                    ../../assets/img/betterBuildWins-large.png 2x
                   "
                 alt="betterBuildWins"
                 className="project__screenshot"
@@ -80,8 +80,8 @@ export function Projects() {
           <div className="project__details">
             <figure className="project__figure project__figure--demo">
               <video className="project__demo-video" controls muted>
-                <source src="./assets/img/video/listThisDemo.webm" type="video/mp4" />
-                <source src="./assets/img/video/listThisDemo.webm" type="video/webm" />
+                <source src="../../assets/img/video/listThisDemo.webm" type="video/mp4" />
+                <source src="../../assets/img/video/listThisDemo.webm" type="video/webm" />
                 Your browser is not supported!
               </video>
             </figure>

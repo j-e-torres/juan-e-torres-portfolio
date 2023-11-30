@@ -12,13 +12,13 @@ export function Header() {
       <div className="social-media">
         <a rel="noopener" target="_blank" href="https://github.com/j-e-torres" className="social-media__link">
           <svg className="social-media__icon social-media__icon--default">
-            <use xlinkHref="./assets/img/sprite.svg#icon-github"></use>
+            <use xlinkHref="../../assets/img/sprite.svg#icon-github"></use>
           </svg>
         </a>
 
         <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/juan-torres-w2w2" className="social-media__link">
           <svg className="social-media__icon social-media__icon--default">
-            <use xlinkHref="./assets/img/sprite.svg#icon-linkedin"></use>
+            <use xlinkHref="../../assets/img/sprite.svg#icon-linkedin"></use>
           </svg>
         </a>
       </div>

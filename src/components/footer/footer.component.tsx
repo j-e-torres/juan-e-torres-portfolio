@@ -22,7 +22,7 @@ export function Footer() {
           <a rel="noopener" href="https://github.com/j-e-torres/" className="btn btn__github--grey" target="_blank">
             <span>
               <svg className="social-media__icon social-media__icon--github--btn">
-                <use xlinkHref="./assets/img/sprite.svg#icon-github"></use>
+                <use xlinkHref="../../assets/img/sprite.svg#icon-github"></use>
               </svg>
             </span>
             GitHub
