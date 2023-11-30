@@ -1,15 +1,11 @@
-
 import './about.styles.scss';
 export function About() {
-
   return (
     <section id="section-about" className="section-about">
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
           <source src="./assets/img/video/bigapple.mp4" type="video/mp4" />
-
           <source src="./assets/img/video/bigapple.mp4" type="video/webm" />
-
           Your browser is not supported!
         </video>
       </div>
@@ -40,9 +36,7 @@ export function About() {
                   <span>Jan 2019 &mdash; Jun 2019</span>
                 </h4>
 
-                <p className="about__text about__text--1">
-                  Certificate of Completion, Web Development Immersive
-                </p>
+                <p className="about__text about__text--1">Certificate of Completion, Web Development Immersive</p>
               </div>
 
               <div>
@@ -51,35 +45,32 @@ export function About() {
                 </h4>
 
                 <p className="about__text about__text--1">
-                  Bachelor of Business Administration, Concentration in Human
-                  Resources Management
+                  Bachelor of Business Administration, Concentration in Human Resources Management
                 </p>
               </div>
             </div>
 
             <p className="about__text">
-              Hello and welcome, my name is Juan Torres and I am a Full
-              Stack Developer based in NYC, looking for front end, back
-              end, or full stack developer opportunities.
+              Hello and welcome! I'm Juan Torres, a Full Stack Developer based in NYC. I specialize in front-end and
+              back-end development, utilizing technologies such as React, Angular, Node.js, Express.js, MongoDB, and more.
+              Currently open to front-end, back-end, or full-stack opportunities.
             </p>
 
             <p className="about__text">
-              I am many things, ambitious, resolute, dedicated, enthusiastic,
-              eager to learn, and steadfast. But don't take it from me, see what others
-              are saying!
+              Beyond coding, I am many things, ambitious, resolute, dedicated, enthusiastic, eager to learn, and steadfast. But don't
+              take it from me, see what others are saying!
             </p>
 
-            {/* <!-- <button className="btn-inline">
-            <a href="#">View Reviews<span>&rarr;</span> </a>
-          </button> --> */}
+            <p className="about__text">
+              Location: NYC (Open to remote opportunities)
+            </p>
+
           </div>
         </div>
 
         <div className="about__reviews">
           <figure className="about__review">
-            <blockquote className="about__review-text">
-              Muy Inteligente (Very Intelligent).
-            </blockquote>
+            <blockquote className="about__review-text">Muy Inteligente (Very Intelligent).</blockquote>
 
             <figcaption className="about__review-info">
               <div className="about__review-person">&mdash; Mom</div>
@@ -89,9 +80,7 @@ export function About() {
           </figure>
 
           <figure className="about__review">
-            <blockquote className="about__review-text">
-              I want to be just like him!
-            </blockquote>
+            <blockquote className="about__review-text">I want to be just like him!</blockquote>
 
             <figcaption className="about__review-info">
               <div className="about__review-person">&mdash; Me</div>
@@ -101,9 +90,7 @@ export function About() {
           </figure>
 
           <figure className="about__review">
-            <blockquote className="about__review-text">
-              Such a cool guy, great friend to have!
-            </blockquote>
+            <blockquote className="about__review-text">Such a cool guy, great friend to have!</blockquote>
 
             <figcaption className="about__review-info">
               <div className="about__review-person">&mdash; A friend</div>
@@ -113,9 +100,7 @@ export function About() {
           </figure>
 
           <figure className="about__review">
-            <blockquote className="about__review-text">
-              Why is he looking at my fries?
-            </blockquote>
+            <blockquote className="about__review-text">Why is he looking at my fries?</blockquote>
 
             <figcaption className="about__review-info">
               <div className="about__review-person">&mdash; Stranger</div>
@@ -125,9 +110,7 @@ export function About() {
           </figure>
 
           <figure className="about__review">
-            <blockquote className="about__review-text">
-              Sometimes forget to take out trash.
-            </blockquote>
+            <blockquote className="about__review-text">Sometimes forget to take out trash.</blockquote>
 
             <figcaption className="about__review-info">
               <div className="about__review-person">&mdash; Wife</div>
@@ -137,9 +120,7 @@ export function About() {
           </figure>
 
           <figure className="about__review">
-            <blockquote className="about__review-text">
-              Dependable, hardworking.
-            </blockquote>
+            <blockquote className="about__review-text">Dependable, hardworking.</blockquote>
 
             <figcaption className="about__review-info">
               <div className="about__review-person">&mdash; Previous Jobs</div>
@@ -150,6 +131,5 @@ export function About() {
         </div>
       </div>
     </section>
-
-  )
+  );
 }
