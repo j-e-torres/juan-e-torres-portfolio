@@ -1,11 +1,13 @@
 import './about.styles.scss';
+
+import bigAppleVideo from '../../assets/img/video/bigapple.mp4';
 export function About() {
   return (
     <section id="section-about" className="section-about">
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
-          <source src="./assets/img/video/bigapple.mp4" type="video/mp4" />
-          <source src="./assets/img/video/bigapple.mp4" type="video/webm" />
+          <source src={bigAppleVideo} type="video/mp4" />
+          <source src={bigAppleVideo} type="video/webm" />
           Your browser is not supported!
         </video>
       </div>

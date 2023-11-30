@@ -25,9 +25,10 @@ export function Header() {
         </a>
 
         <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/juan-torres-w2w2" className="social-media__link">
-          <svg className="social-media__icon social-media__icon--default">
+          {/* <svg className="social-media__icon social-media__icon--default">
             <use xlinkHref={linkedInIcon}></use>
-          </svg>
+          </svg> */}
+          <img src={linkedInIcon} alt="LinkedIn" className="social-media__icon social-media__icon--default"></img>
         </a>
       </div>
     </header>
