@@ -1,6 +1,9 @@
 import {Nav} from '../nav/nav.component';
 import './header.styles.scss';
 
+import githubIcon from '../../assets/img/SVG/github.svg';
+import linkedInIcon from '../../assets/img/SVG/linkedin.svg';
+
 export function Header() {
   return (
     <header className="header">
@@ -12,13 +15,13 @@ export function Header() {
       <div className="social-media">
         <a rel="noopener" target="_blank" href="https://github.com/j-e-torres" className="social-media__link">
           <svg className="social-media__icon social-media__icon--default">
-            <use xlinkHref="./assets/img/sprite.svg#icon-github"></use>
+            <use xlinkHref={githubIcon}></use>
           </svg>
         </a>
 
         <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/juan-torres-w2w2" className="social-media__link">
           <svg className="social-media__icon social-media__icon--default">
-            <use xlinkHref="./assets/img/sprite.svg#icon-linkedin"></use>
+            <use xlinkHref={linkedInIcon}></use>
           </svg>
         </a>
       </div>
