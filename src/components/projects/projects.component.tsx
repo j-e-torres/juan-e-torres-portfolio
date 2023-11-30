@@ -1,5 +1,9 @@
 import './projects.styles.scss';
 
+import betterBuildWinsSmall from '../../assets/img/betterBuildWins-small.png';
+import betterBuildWinsMedium from '../../assets/img/betterBuildWins-medium.png';
+import betterBuildWinsLarge from '../../assets/img/betterBuildWins-large.png';
+
 export function Projects() {
   return (
     <section id="section-projects" className="section-projects">
@@ -18,17 +22,17 @@ export function Projects() {
           <div className="project__details">
             <picture className="project__figure project__figure--screenshot">
               <source
-                srcSet="
-                    ./assets/img/betterBuildWins-small.png  1x,
-                    ./assets/img/betterBuildWins-medium.png 2x
-                  "
+                srcSet={`
+                ${betterBuildWinsSmall}  1x,
+                ${betterBuildWinsMedium} 2x
+              `}
                 media="(max-width: 2500px)"
               />
               <img
-                srcSet="
-                    ./assets/img/betterBuildWins-large.png 1x,
-                    ./assets/img/betterBuildWins-large.png 2x
-                  "
+                srcSet={`
+                ${betterBuildWinsLarge} 1x,
+                ${betterBuildWinsLarge} 2x
+              `}
                 alt="betterBuildWins"
                 className="project__screenshot"
               />
@@ -80,8 +84,8 @@ export function Projects() {
           <div className="project__details">
             <figure className="project__figure project__figure--demo">
               <video className="project__demo-video" controls muted>
-                <source src="./assets/img/video/listThisDemo.webm" type="video/mp4" />
-                <source src="./assets/img/video/listThisDemo.webm" type="video/webm" />
+                <source src="../../assets/img/video/listThisDemo.webm" type="video/mp4" />
+                <source src="../../assets/img/video/listThisDemo.webm" type="video/webm" />
                 Your browser is not supported!
               </video>
             </figure>
