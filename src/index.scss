@@ -5,10 +5,13 @@
 @import './sass/components/card-container';
 @import './sass/components/list';
 @import './sass/components//social-media';
+@import './sass/components/btn-inline';
+@import './sass/components/btn';
 
 :root {
   --color-white: #ffffff;
   --color-blue-light-1: #99ccff;
+  --social-media-linkedin-blue: #0077b5;
 
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;

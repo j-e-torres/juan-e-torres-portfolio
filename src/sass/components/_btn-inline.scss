@@ -1,0 +1,41 @@
+.btn-inline {
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  font-weight: 100;
+  display: block;
+  border-bottom: var(--line-3);
+
+  display: flex;
+  align-items: center;
+
+  & span {
+    margin-left: 8px;
+    transition: margin-left 0.5s;
+  }
+
+  &:hover {
+    border-bottom: var(--line-4);
+
+    & span {
+      margin-left: 15px;
+    }
+  }
+
+  a {
+    &:link,
+    &:visited {
+      height: 4rem;
+      text-decoration: none;
+      color: var(--color-grey-dark-1);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        color: var(--color-grey-dark-2);
+      }
+    }
+  }
+}
