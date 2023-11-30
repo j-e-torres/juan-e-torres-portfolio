@@ -42,7 +42,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-size: 100%;
   font: inherit;
 }
 
@@ -56,8 +55,6 @@ html {
 }
 
 body {
-  /* display: flex;
-  place-items: flex-start center; */
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.7;

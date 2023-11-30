@@ -76,7 +76,6 @@
 
   &__figure {
     overflow: hidden;
-    // border-radius: 3px;
     margin-right: 4rem;
     flex: 0 0 40%;
 
@@ -121,7 +120,6 @@
     font-weight: 300;
 
     @media only screen and (max-width: 900px) {
-      // width: 90%;
       flex: 1;
     }
 
