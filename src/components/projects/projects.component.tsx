@@ -4,6 +4,8 @@ import betterBuildWinsSmall from '../../assets/img/betterBuildWins-small.png';
 import betterBuildWinsMedium from '../../assets/img/betterBuildWins-medium.png';
 import betterBuildWinsLarge from '../../assets/img/betterBuildWins-large.png';
 
+import listThisDemo from '../../assets/img/video/listThisDemo.webm';
+
 export function Projects() {
   return (
     <section id="section-projects" className="section-projects">
@@ -84,8 +86,8 @@ export function Projects() {
           <div className="project__details">
             <figure className="project__figure project__figure--demo">
               <video className="project__demo-video" controls muted>
-                <source src="../../assets/img/video/listThisDemo.webm" type="video/mp4" />
-                <source src="../../assets/img/video/listThisDemo.webm" type="video/webm" />
+                <source src={listThisDemo} type="video/mp4" />
+                <source src={listThisDemo} type="video/webm" />
                 Your browser is not supported!
               </video>
             </figure>
