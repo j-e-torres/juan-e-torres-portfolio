@@ -1,7 +1,8 @@
 import './footer.styles.scss';
-import githubIcon from '../../assets/img/SVG/github.svg';
+import { GitHubSVG } from '../svgs/github-svg';
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="footer__box">
@@ -21,12 +22,13 @@ export function Footer() {
           </a>
 
           <a rel="noopener" href="https://github.com/j-e-torres/" className="btn btn__github--grey" target="_blank">
-            <span>
+            <span className="social-media__icon social-media__icon--github--btn">
               {/* <svg className="social-media__icon social-media__icon--github--btn">
                 <use xlinkHref="../../assets/img/sprite.svg#icon-github"></use>
               </svg> */}
-              <img src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--github--btn">
-              </img>
+              {/* <img src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--github--btn">
+              </img> */}
+              <GitHubSVG />
             </span>
             GitHub
           </a>
@@ -34,7 +36,7 @@ export function Footer() {
       </div>
 
       <p className="footer__copyright">
-        &copy; Copyright 2021 Juan E. Torres. All Rights Reserved. Credit to
+        &copy; Copyright {currentYear} Juan E. Torres. All Rights Reserved. Credit to
         <a rel="noopener" href="http://codingheroes.io/resources/" target="_blank" className="footer__link">
           Jonas Schmedtmann
         </a>

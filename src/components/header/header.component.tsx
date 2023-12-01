@@ -1,13 +1,14 @@
-import {Nav} from '../nav/nav.component';
+import { Nav } from '../nav/nav.component';
+import { GitHubSVG } from '../svgs/github-svg';
+import { LinkedInSvg } from '../svgs/linkedin-svg';
 import './header.styles.scss';
-
-import githubIcon from '../../assets/img/SVG/github.svg';
-import linkedInIcon from '../../assets/img/SVG/linkedin.svg';
-
-// import test from '../../assets/img/sprite.svg'
 
 
 export function Header() {
+  console.log({ GitHubSVG });
+  // console.log({test});
+
+
   return (
     <header className="header">
       <Nav />
@@ -20,15 +21,17 @@ export function Header() {
           {/* <svg className="social-media__icon social-media__icon--default">
             <use xlinkHref={githubIcon}></use>
           </svg> */}
-          <img src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--default">
-          </img>
+          {/* <img style={{fill: '#ffffff'}} src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--default">
+          </img> */}
+          <span className="social-media__icon social-media__icon--default">
+            <GitHubSVG />
+          </span>
         </a>
 
         <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/juan-torres-w2w2" className="social-media__link">
-          {/* <svg className="social-media__icon social-media__icon--default">
-            <use xlinkHref={linkedInIcon}></use>
-          </svg> */}
-          <img src={linkedInIcon} alt="LinkedIn" className="social-media__icon social-media__icon--default"></img>
+          <span className="social-media__icon social-media__icon--default">
+            <LinkedInSvg />
+          </span>
         </a>
       </div>
     </header>
