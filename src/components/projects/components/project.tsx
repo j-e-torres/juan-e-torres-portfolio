@@ -1,4 +1,4 @@
-import {ProjectInterface} from '../utils/projects.const';
+import { ProjectInterface } from '../utils/projects.const';
 
 interface Props {
   project: ProjectInterface;
@@ -43,26 +43,25 @@ export function ProjectComponent(props: Readonly<Props>) {
   return (
     <div className="project">
       <div className="util-mb-4">
-        <h3 className="heading-tertiary">ListThis</h3>
+        <h3 className="heading-tertiary">{props.project.projectName}</h3>
       </div>
 
       <div className="project__details">
         {mediaHandler()}
 
         <div className="project__description">
-          ListThis is a mobile application built with React Native. It is a simple todo list application where you can
-          create an account and create lists with tasks. You can add users to have access to lists that you create and
-          share lists. Good for families that have a hard time coordinating grocery needs!
+          {props.project.projectDescription}
+
           <div className="project__info">
             <ul className="global-list">
               <li className="global-list__project-li">
                 <a
                   rel="noopener"
-                  href="https://github.com/j-e-torres/ListThis"
+                  href={props.project.githubUrl}
                   target="_blank"
                   className="global-list__link global-list__link--project"
                 >
-                  Github <span>&rarr;</span>
+                  {props.project.githubUrlTitle} <span>&rarr;</span>
                 </a>
               </li>
               {/* <!-- <li className="global-list__project-li">
