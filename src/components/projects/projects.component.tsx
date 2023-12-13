@@ -1,11 +1,31 @@
 import './projects.styles.scss';
 
-import betterBuildWinsSmall from '../../assets/img/betterBuildWins-small.png';
-import betterBuildWinsMedium from '../../assets/img/betterBuildWins-medium.png';
-import betterBuildWinsLarge from '../../assets/img/betterBuildWins-large.png';
+// import betterBuildWinsSmall from '../../assets/img/betterBuildWins-small.png';
+// import betterBuildWinsMedium from '../../assets/img/betterBuildWins-medium.png';
+// import betterBuildWinsLarge from '../../assets/img/betterBuildWins-large.png';
 
 import listThisDemo from '../../assets/img/video/listThisDemo.webm';
+import { ProjectComponent } from './components/project';
 
+export type MediaType = 'webm';
+export interface ProjectInterface {
+  projectName: string;
+  media: string;
+  mediaType: MediaType;
+  projectDescription: string;
+  githubUrl: string;
+  githubUrlTitle: string;
+}
+const projects: ProjectInterface[] = [
+  {
+    projectName: 'ListThis',
+    media: listThisDemo,
+    mediaType: 'webm',
+    projectDescription: "ListThis is a mobile application built with React Native. It is a simple todo list application where you can create an account and create lists with tasks. You can add users to have access to lists that you create and share lists. Good for families that have a hard time coordinating grocery needs!",
+    githubUrl: 'https://github.com/j-e-torres/ListThis',
+    githubUrlTitle: 'Github'
+  }
+]
 export function Projects() {
   return (
     <section id="section-projects" className="section-projects">
@@ -16,7 +36,7 @@ export function Projects() {
       </div>
 
       <div className="projects">
-        <div className="project">
+        {/* <div className="project">
           <div className="util-mb-4">
             <h3 className="heading-tertiary">betterBuildWins</h3>
           </div>
@@ -76,53 +96,13 @@ export function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="project">
-          <div className="util-mb-4">
-            <h3 className="heading-tertiary">ListThis</h3>
-          </div>
 
-          <div className="project__details">
-            <figure className="project__figure project__figure--demo">
-              <video className="project__demo-video" controls muted>
-                <source src={listThisDemo} type="video/mp4" />
-                <source src={listThisDemo} type="video/webm" />
-                Your browser is not supported!
-              </video>
-            </figure>
 
-            <div className="project__description">
-              ListThis is a mobile application built with React Native. It is a simple todo list application where you
-              can create an account and create lists with tasks. You can add users to have access to lists that you
-              create and share lists. Good for families that have a hard time coordinating grocery needs!
-              <div className="project__info">
-                <ul className="global-list">
-                  <li className="global-list__project-li">
-                    <a
-                      rel="noopener"
-                      href="https://github.com/j-e-torres/ListThis"
-                      target="_blank"
-                      className="global-list__link global-list__link--project"
-                    >
-                      Github <span>&rarr;</span>
-                    </a>
-                  </li>
-                  {/* <!-- <li className="global-list__project-li">
-                      <a
-                      rel="noopener"
-                        href="#"
-                        className="global-list__link global-list__link--project"
-                        >ListThis <span>&rarr;</span></a
-                      >
-                    </li> --> */}
-                </ul>
 
-                <div className="project__tech-stack"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectComponent project={projects[0]} />
+
       </div>
     </section>
   );

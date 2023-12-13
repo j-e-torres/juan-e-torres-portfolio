@@ -5,9 +5,6 @@ import './header.styles.scss';
 
 
 export function Header() {
-  console.log({ GitHubSVG });
-  // console.log({test});
-
 
   return (
     <header className="header">
@@ -18,11 +15,6 @@ export function Header() {
 
       <div className="social-media">
         <a rel="noopener" target="_blank" href="https://github.com/j-e-torres" className="social-media__link">
-          {/* <svg className="social-media__icon social-media__icon--default">
-            <use xlinkHref={githubIcon}></use>
-          </svg> */}
-          {/* <img style={{fill: '#ffffff'}} src={githubIcon} alt="GitHub" className="social-media__icon social-media__icon--default">
-          </img> */}
           <span className="social-media__icon social-media__icon--default">
             <GitHubSVG />
           </span>
