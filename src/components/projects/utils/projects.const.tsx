@@ -4,6 +4,8 @@ import betterBuildWinsLarge from '../../../assets/img/betterBuildWins-large.png'
 
 import listThisDemo from '../../../assets/img/video/listThisDemo.webm';
 
+import defaultProjectPic from '../../../assets/img/default-project-pic.png';
+
 export type MediaType = 'webm' | 'mp4' | 'png';
 
 interface FileSizeInterface {
@@ -14,6 +16,7 @@ interface FileSizeInterface {
 export interface MediaInterface {
   video?: string;
   files?: FileSizeInterface;
+  fallback: string;
 }
 
 export interface ProjectInterface {
@@ -30,6 +33,7 @@ export const projects: ProjectInterface[] = [
     projectName: 'ListThis',
     media: {
       video: listThisDemo,
+      fallback: defaultProjectPic
     },
     mediaType: 'webm',
     projectDescription:
@@ -45,6 +49,7 @@ export const projects: ProjectInterface[] = [
         medium: betterBuildWinsMedium,
         large: betterBuildWinsLarge,
       },
+      fallback: defaultProjectPic
     },
     mediaType: 'png',
     projectDescription:
@@ -52,4 +57,21 @@ export const projects: ProjectInterface[] = [
     githubUrl: 'https://github.com/j-e-torres/betterBuildWins',
     githubUrlTitle: 'Github',
   },
+  {
+    projectName: 'Simple Calculator',
+    media: {
+      // files: {
+      //   // small: defaultProjectPic,
+      //   // medium: defaultProjectPic,
+      //   // large: defaultProjectPic,
+      // },
+      fallback: defaultProjectPic
+    },
+    mediaType: 'png',
+    projectDescription:
+      'A simple calculator for simple computations.',
+    githubUrl: 'https://github.com/j-e-torres/simple-calculator',
+    githubUrlTitle: 'Github',
+  },
+
 ];

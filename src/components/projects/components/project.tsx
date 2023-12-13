@@ -20,21 +20,33 @@ export function ProjectComponent(props: Readonly<Props>) {
       default:
         return (
           <picture className="project__figure project__figure--screenshot">
-            <source
-              srcSet={`
-              ${props.project.media.files?.small}  1x,
-              ${props.project.media.files?.medium} 2x
-            `}
-              media="(max-width: 2500px)"
-            />
-            <img
-              srcSet={`
-                ${props.project.media.files?.large} 1x,
-                ${props.project.media.files?.large} 2x
-              `}
-              alt="betterBuildWins"
-              className="project__screenshot"
-            />
+            {!props.project.media.files && (
+              <img
+                src={props.project.media.fallback}
+                alt="betterBuildWins"
+                className="project__screenshot"
+              />
+            )}
+
+            {props.project.media.files && (
+              <>
+                <source
+                  srcSet={`
+                    ${props.project.media.files?.small}  1x,
+                    ${props.project.media.files?.medium} 2x
+                  `}
+                  media="(max-width: 2500px)"
+                />
+                <img
+                  srcSet={`
+                    ${props.project.media.files?.large} 1x,
+                    ${props.project.media.files?.large} 2x
+                  `}
+                  alt="betterBuildWins"
+                  className="project__screenshot"
+                />
+              </>
+            )}
           </picture>
         );
     }
