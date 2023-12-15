@@ -23,7 +23,7 @@ export function ProjectComponent(props: Readonly<Props>) {
             {!props.project.media.files && (
               <img
                 src={props.project.media.fallback}
-                alt="betterBuildWins"
+                alt={props.project.projectName}
                 className="project__screenshot"
               />
             )}
@@ -42,7 +42,7 @@ export function ProjectComponent(props: Readonly<Props>) {
                     ${props.project.media.files?.large} 1x,
                     ${props.project.media.files?.large} 2x
                   `}
-                  alt="betterBuildWins"
+                  alt={props.project.projectName}
                   className="project__screenshot"
                 />
               </>
