@@ -2,6 +2,8 @@ import betterBuildWinsSmall from '../../../assets/img/betterBuildWins-small.png'
 import betterBuildWinsMedium from '../../../assets/img/betterBuildWins-medium.png';
 import betterBuildWinsLarge from '../../../assets/img/betterBuildWins-large.png';
 
+import simpleCalculator from '../../../assets/img/simple-calculator.png';
+
 import listThisDemo from '../../../assets/img/video/listThisDemo.webm';
 
 import defaultProjectPic from '../../../assets/img/default-project-pic.png';
@@ -60,11 +62,11 @@ export const projects: ProjectInterface[] = [
   {
     projectName: 'Simple Calculator',
     media: {
-      // files: {
-      //   // small: defaultProjectPic,
-      //   // medium: defaultProjectPic,
-      //   // large: defaultProjectPic,
-      // },
+      files: {
+        small: simpleCalculator,
+        medium: simpleCalculator,
+        large: simpleCalculator,
+      },
       fallback: defaultProjectPic
     },
     mediaType: 'png',
