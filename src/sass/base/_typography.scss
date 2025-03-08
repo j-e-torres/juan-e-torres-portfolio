@@ -1,6 +1,5 @@
 .heading-primary {
   color: var(--color-grey-light-1);
-  text-transform: uppercase;
   text-align: center;
 
   // display: flex;
@@ -11,7 +10,8 @@
     display: block;
     font-size: 6rem;
     font-weight: 100;
-    letter-spacing: 3.5rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
 
     animation: moveDown 1.2s ease-in;
 
@@ -33,9 +33,30 @@
 
   &--sub {
     display: block;
+    font-size: 2.25rem;
+    font-weight: 300;
+    letter-spacing: .25rem;
+
+    animation: moveUp 1.2s ease-in;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 1.5rem;
+      letter-spacing: 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      letter-spacing: 0.75rem;
+    }
+
+    @media only screen and (max-width: 475px) {
+      font-size: 1rem;
+    }
+  }
+  &--sub-2 {
+    display: block;
     font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 1.5rem;
+    letter-spacing: .25rem;
 
     animation: moveUp 1.2s ease-in;
 
